@@ -1,3 +1,9 @@
+.DEFAULT_GOAL := _setup
+
+
+.PHONY: _setup
+_setup:
+	@node .github/setup.js
 .PHONY: attach backup build help logs mysql restore shell start status stop test
 
 COMPOSE="venv/bin/docker-compose"
